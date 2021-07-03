@@ -23,9 +23,15 @@ def fibonacci_numbers(tensor: tf.Tensor) -> tf.Tensor:
     b_init = tf.constant(1, dtype)
 
     _, fib_numbers, _, _ = tf.while_loop(
-        lambda i, z, a, b: i < max_index,
-        lambda i, z, a, b: [i + 1,
-                            tf.concat([z, [a + b]], axis=0), b, a + b],
-        loop_vars=[i_init, z_init, a_init, b_init])
+        cond=lambda i, z, a, b: i < max_index,
+        body=lambda i, z, a, b:
+        [i + 1, tf.concat([z, [a + b]], axis=0), b, a + b],
+        loop_vars=[i_init, z_init, a_init, b_init],
+        shape_invariants=[
+            i_init.get_shape(),
+            tf.TensorSpec([None], dtype),
+            a_init.get_shape(),
+            b_init.get_shape()
+        ])
 
     return tf.gather(fib_numbers, tensor)
