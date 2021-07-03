@@ -1,5 +1,7 @@
 # tf-fibonacci
 
+[![Build Status](https://travis-ci.com/soerenberg/tf-fibonacci.svg?branch=main)](https://travis-ci.com/soerenberg/tf-fibonacci)
+
 This is a simple example of computing Fibonacci in TensorFlow, exporting the
 computation graph as a TensorFlow SavedModel and finally serve the resulting
 SavedModel using TensorFlow-Serving using Docker.
