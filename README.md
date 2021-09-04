@@ -1,6 +1,7 @@
-# tf-fibonacci
-
 [![Build Status](https://travis-ci.com/soerenberg/tf-fibonacci.svg?branch=main)](https://travis-ci.com/soerenberg/tf-fibonacci)
+[![codecov](https://codecov.io/gh/soerenberg/tf-fibonacci/branch/main/graph/badge.svg?token=VDVNEAG1YV)](https://codecov.io/gh/soerenberg/tf-fibonacci)
+
+# tf-fibonacci
 
 This is a simple example of computing Fibonacci numbers in TensorFlow,
 exporting the computation graph as a TensorFlow SavedModel and finally serve the
