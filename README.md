@@ -1,3 +1,4 @@
+![CI Tests](https://github.com/soerenberg/tf-fibonacci/actions/workflows/ci.yml/badge.svg)
 [![Build Status](https://travis-ci.com/soerenberg/tf-fibonacci.svg?branch=main)](https://travis-ci.com/soerenberg/tf-fibonacci)
 [![codecov](https://codecov.io/gh/soerenberg/tf-fibonacci/branch/main/graph/badge.svg?token=VDVNEAG1YV)](https://codecov.io/gh/soerenberg/tf-fibonacci)
 
