@@ -31,5 +31,6 @@ jobs:
         run: poetry install --no-interaction --no-root
       - name: Run tests
         run: |
+          cd python
           poetry run python -m pytest
           poetry run python -m pytest --cov=nast --cov-report=term
